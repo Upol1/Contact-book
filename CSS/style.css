@@ -1,0 +1,174 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1614339351_63-p-fon-svetlii-stol-89.jpg")
+    no-repeat center center fixed; /* Путь к картинке */
+  background-size: cover; /* Картинка будет масштабироваться, чтобы покрыть весь экран */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(68, 68, 255);
+}
+
+.add-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.add-contact input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease; /* Добавляем анимацию изменения цвета рамки */
+}
+
+.add-contact input:focus {
+  border-color: #4caf50; /* Изменяем цвет рамки при фокусе */
+}
+
+.add-contact button {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Добавляем анимацию изменения цвета и масштаба */
+}
+
+.add-contact button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Немного увеличиваем размер при наведении */
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.contact-list li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-list li div {
+  flex: 1;
+}
+
+.contact-list li h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+  color: #333;
+}
+
+.contact-list li p {
+  margin: 0;
+  color: #666;
+}
+
+.contact-list li button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Добавляем анимацию изменения цвета и масштаба */
+}
+
+.contact-list li button.btn-delete {
+  background-color: #f44336; /* Красный цвет */
+}
+
+.contact-list li button.btn-delete:hover {
+  background-color: #d32f2f; /* Темно-красный при наведении */
+  transform: scale(1.05); /* Немного увеличиваем размер при наведении */
+}
+
+.contact-list li button.btn-edit {
+  background-color: #9c27b0; /* Фиолетовый цвет */
+}
+
+.contact-list li button.btn-edit:hover {
+  background-color: #7b1fa2; /* Темно-фиолетовый при наведении */
+  transform: scale(1.05); /* Немного увеличиваем размер при наведении */
+}
+
+.edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.edit-modal input {
+  width: calc(100% - 40px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease; /* Добавляем анимацию изменения цвета рамки */
+}
+
+.edit-modal input:focus {
+  border-color: #4caf50; /* Изменяем цвет рамки при фокусе */
+}
+
+.edit-modal button {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Добавляем анимацию изменения цвета и масштаба */
+}
+
+.edit-modal button.cancel {
+  background-color: #f44336;
+}
+
+.edit-modal button.cancel:hover {
+  background-color: #d32f2f;
+}

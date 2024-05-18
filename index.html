@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <h1>Contact Book</h1>
+    <div class="container">
+      <div class="add-contact">
+        <input type="text" class="input-name" placeholder="Имя контакта" />
+        <input type="text" class="input-surname" placeholder="Фамилия" />
+        <input type="text" class="input-phone" placeholder="Номер телефона" />
+        <input type="text" class="input-photo" placeholder="Ссылка на фото" />
+        <button class="btn-add">Добавить контакт</button>
+      </div>
+      <ul class="contact-list"></ul>
+    </div>
+    <div class="edit-modal">
+      <input
+        type="text"
+        class="input-edit"
+        placeholder="Изменить имя контакта"
+      />
+      <input
+        type="text"
+        class="input-edit-surname"
+        placeholder="Изменить фамилию"
+      />
+      <input
+        type="text"
+        class="input-edit-phone"
+        placeholder="Изменить номер телефона"
+      />
+      <input
+        type="text"
+        class="input-edit-photo"
+        placeholder="Изменить ссылку на фото"
+      />
+      <button class="btn-save-edit">Сохранить изменения</button>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
